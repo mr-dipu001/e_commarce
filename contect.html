@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="about.html">About</a>
+                <a href="contect.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="nav-center">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="nav-right">
+            <button onclick="login()">Login</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </nav>
+    <header>
+        <!-- Your header content here (navigation bar, logo, etc.) -->
+    </header>
+
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Have a question or feedback? We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <!-- Additional footer information -->
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript for form validation -->
+    <script src="script.js"></script>
+</body>
+</html>
